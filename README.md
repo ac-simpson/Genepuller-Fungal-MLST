@@ -1,5 +1,5 @@
 # Genepuller-Fungal-MLST
-Blast wrapper script for pulling relevant genes from fungal (or indeed any) genomes for MLST
+Blast wrapper script for pulling relevant genes from fungal (or indeed any) genomes for MLST. Currently a jupyter notebook.
 
 Fungal taxonomy based on multi-locus sequenced typing (MLST) is a tricky business. While there are more convenient and automated ways of doing whole-genome trees for fungi (for example, see https://github.com/stajichlab), most fungal genomes haven't been sequenced; in most cases, Sanger sequencing has been performed on specific marker genes (most often the ITS sequence, but also other marker genes such as calmodulin, translation elogation factor 1, etc.). Finding the best taxonomic placement of an unknown fungal WGS often relies on extracting the genus-appropriate marker genes from the genome and placing them in a tree with the same marker genes from related species or genera. 
 
@@ -17,7 +17,7 @@ How it works:
 # TBD
 I am in the process of converting this script from something used in JPL Biotechnology and Planetary Protection R&D that no one else ever looks at, to something useful for anyone else with an MLST problem. TBD: 
 1. remove steps having to do with pulling genomes and parsing their standardized ids from our Google Workspace account
-2. Implement this as a standalone script with command line options
+2. Implement this as a standalone script with command line options instead of as a jupyter notebook
 3. Include better initial set(s) of databases
 4. Create more options for parsing the blast results, including reporting multiple good matches
 5. Implement the blast jobs to run in parallel to make use of multi-threading
